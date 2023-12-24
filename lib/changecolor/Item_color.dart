@@ -11,7 +11,8 @@ return Padding(padding: EdgeInsets.all(8),
     child: CircleAvatar(radius: 25,
       backgroundColor: color),)
       :CircleAvatar(radius: 30,
-  backgroundColor: color),
+
+  backgroundColor: color.withOpacity(1)),
 );
   }
 }
