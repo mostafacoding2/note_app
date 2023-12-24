@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:note_app/constants/constants.dart';
 import 'package:note_app/customs/custom_text.dart';
 class CustomButon extends StatelessWidget {
-  CustomButon({super.key,this.onTap,required this.text,});
+  CustomButon({super.key,this.onTap,required this.text,this.isLoading=true});
   VoidCallback ?onTap;
   final String text;
+  bool isLoading ;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class CustomButon extends StatelessWidget {
         height: 60,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(color: keyprimarycolor,borderRadius: BorderRadius.circular(16)),
-        child: Center(child: CustomText(text: text, color: Colors.black, fontSize: 24)),
+        child: Center(child:isLoading?CircularProgressIndicator() :  CustomText(text: text, color: Colors.black, fontSize: 24)),
 
       ),
     );
