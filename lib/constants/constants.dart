@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 final Color keyprimarycolor=Color(0xff62FCD7);
 final String  keybox='Notes';
 List<Color>keycolors=const [

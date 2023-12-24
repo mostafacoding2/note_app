@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:note_app/widget/AddNote/add_form_note.dart';
-
 class ShowModelBottomSheet extends StatelessWidget {
   const ShowModelBottomSheet({super.key});
 
