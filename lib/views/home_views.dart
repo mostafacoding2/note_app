@@ -17,7 +17,9 @@ class HomeView extends StatelessWidget {
               style: ElevatedButton.styleFrom(backgroundColor: Colors.white,
                   minimumSize:  const Size(150,60)),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){return  const  NoteView();}));
+                Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                  return  const  NoteView();
+                }));
               },
               child:   const CustomText(text: 'Open', color: Colors.black, fontSize: 23)
           ),
